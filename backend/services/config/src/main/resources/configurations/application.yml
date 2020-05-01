@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:6761}
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: ${USER_INFO_URL:}

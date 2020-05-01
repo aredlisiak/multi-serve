@@ -1,0 +1,9 @@
+
+dependencies {
+  api("org.codehaus.groovy:groovy-all:$groovyVersion")
+  api("org.spockframework:spock-core:$spockVersion")
+  api("org.spockframework:spock-spring:$spockVersion")
+  api('org.springframework.boot:spring-boot-starter-test') {
+    exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+  }
+}
