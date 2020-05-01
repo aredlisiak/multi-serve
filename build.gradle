@@ -1,4 +1,16 @@
+plugins {
+    id 'com.palantir.git-version' version '0.12.3'
+}
+
 allprojects {
     group = 'pl.aredlisiak'
-    version = '0.0.1-SNAPSHOT'
+    version = gitVersion()
+    println version
+
+    ext {
+        springBootVersion = '2.2.6.RELEASE'
+        springDependencyManagementVersion = '1.0.9.RELEASE'
+        groovyVersion = '3.0.0'
+        spockVersion = '2.0-M2-groovy-3.0'
+    }
 }
