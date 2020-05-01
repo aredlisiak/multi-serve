@@ -1,0 +1,10 @@
+.gradle/
+build/
+gen/
+logs/
+out/
+env/
+.idea/
+*.log
+*.jar
+*.war
