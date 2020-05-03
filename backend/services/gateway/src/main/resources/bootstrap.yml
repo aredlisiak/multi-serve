@@ -1,6 +1,6 @@
 spring:
   application:
-    name: discovery
+    name: gateway
   cloud:
     config:
       uri: ${CONFIG_SERVICE_URL:http://localhost:6888}
@@ -10,4 +10,6 @@ spring:
 
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:6761/eureka/}

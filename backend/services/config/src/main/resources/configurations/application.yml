@@ -1,9 +1,8 @@
 eureka:
   instance:
-    prefer-ip-address: false
+    prefer-ip-address: true
   client:
-    serviceUrl:
-      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:6761}
+    fetch-registry: false
 
 security:
   oauth2:

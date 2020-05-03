@@ -3,5 +3,6 @@ rootProject.name = 'multi-serve'
 include(
         'backend:libs:test-lib',
         'backend:services:config',
-        'backend:services:discovery'
+        'backend:services:discovery',
+        'backend:services:gateway'
 )
