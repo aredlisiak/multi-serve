@@ -4,5 +4,7 @@ include(
         'backend:libs:test-lib',
         'backend:services:config',
         'backend:services:discovery',
-        'backend:services:gateway'
+        'backend:services:gateway',
+        'backend:services:main',
+        'backend:services:secondary'
 )

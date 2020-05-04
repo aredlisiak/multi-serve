@@ -8,8 +8,10 @@ Components used at the moment consist of
 - Spring Cloud Config Server
 - Spring Cloud Netflix Eureka
 - Spring Cloud Gateway
+- Spring MVC
 
 ### Tools
 - Java 11
+- Lombok
 - Gradle/Gradle wrapper
 - Docker
